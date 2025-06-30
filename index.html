@@ -11,7 +11,7 @@
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -25,12 +25,6 @@
             background-image: linear-gradient(rgba(20, 10, 10, 0.8), rgba(20, 10, 10, 0.8)), url('https://empirecitydevelopment.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-07-at-11.36.07-PM.jpeg');
             background-size: cover;
             background-position: center;
-        }
-        .section-title {
-            @apply text-4xl font-extrabold text-gray-800 text-center md:text-5xl;
-        }
-        .section-subtitle {
-            @apply mt-4 text-lg text-gray-600 text-center max-w-2xl mx-auto;
         }
         .service-card {
             @apply bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300;
@@ -96,8 +90,11 @@
         <!-- Services Section -->
         <section id="services" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">Our Expert Services</h2>
-                <p class="section-subtitle">We specialize in a wide range of exterior construction services, ensuring quality and durability for every project.</p>
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">Our Expert Services</h2>
+                    <div class="inline-block mt-4 h-1.5 w-24 bg-red-600 rounded"></div>
+                    <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">We specialize in a wide range of exterior construction services, ensuring quality and durability for every project.</p>
+                </div>
                 <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                     <!-- Service Card 1 -->
                     <div class="service-card">
@@ -183,8 +180,11 @@
         <!-- Gallery Preview Section -->
         <section id="gallery" class="py-20">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">Our Recent Work</h2>
-                <p class="section-subtitle">A glimpse into the quality and craftsmanship we bring to every project.</p>
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">Our Recent Work</h2>
+                    <div class="inline-block mt-4 h-1.5 w-24 bg-red-600 rounded"></div>
+                    <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">A glimpse into the quality and craftsmanship we bring to every project.</p>
+                </div>
                 <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
                     <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-07-at-11.36.07-PM.jpeg" alt="Project 1" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/a78bfa/ffffff?text=Project+1';">
                     <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-29-at-10.43.24-PM.jpeg" alt="Project 2" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/f472b6/ffffff?text=Project+2';">
@@ -200,8 +200,11 @@
         <!-- Testimonials Section -->
         <section id="testimonials" class="py-20 bg-white">
             <div class="container mx-auto px-6">
-                <h2 class="section-title">What Our Clients Say</h2>
-                <p class="section-subtitle">We build strong relationships based on trust and exceptional results.</p>
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 tracking-tight">What Our Clients Say</h2>
+                    <div class="inline-block mt-4 h-1.5 w-24 bg-red-600 rounded"></div>
+                    <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">We build strong relationships based on trust and exceptional results.</p>
+                </div>
                 <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="testimonial-card">
                         <p class="text-gray-600">"Empire City Builders transformed our building's facade. The team was professional, on-time, and the quality of their masonry work is outstanding. Highly recommended!"</p>
