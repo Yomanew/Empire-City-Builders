@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empire City Builders - Premier Exterior Construction in New York</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(10, 20, 40, 0.8), rgba(10, 20, 40, 0.8)), url('https://empirecitydevelopment.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-07-at-11.36.07-PM.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 text-center md:text-4xl;
+        }
+        .section-subtitle {
+            @apply mt-2 text-lg text-gray-600 text-center max-w-2xl mx-auto;
+        }
+        .service-card {
+            @apply bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300;
+        }
+        .testimonial-card {
+            @apply bg-gray-50 p-6 rounded-lg shadow-md;
+        }
+        /* Fallback for broken images */
+        img {
+            background-color: #e5e7eb; /* gray-200 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Using original logo -->
+                <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/06/llloooggooo.png" alt="Empire City Builders Logo" class="h-10">
+            </a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">About</a>
+                <a href="#gallery" class="text-gray-600 hover:text-blue-600 font-medium">Gallery</a>
+                <a href="#contact" class="px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-feather="menu" class="w-6 h-6 text-gray-800"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 pb-4">
+            <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#gallery" class="block py-2 text-gray-600 hover:text-blue-600">Gallery</a>
+            <a href="#contact" class="block mt-2 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg text-center hover:bg-blue-700">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Building New York's Future</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-200">Your trusted partner for premier exterior construction, roofing, and masonry services. Quality craftsmanship, built to last.</p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#contact" class="px-8 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-xl hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">Get a Free Estimate</a>
+                    <a href="#services" class="px-8 py-3 bg-white text-blue-600 font-bold rounded-lg shadow-xl hover:bg-gray-100 transition-transform transform hover:scale-105 duration-300">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Expert Services</h2>
+                <p class="section-subtitle">We specialize in a wide range of exterior construction services, ensuring quality and durability for every project.</p>
+                <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/100_3518_resized1.jpg" alt="Roofing Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/6366f1/ffffff?text=Roofing';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Roofing</h3>
+                            <p class="mt-2 text-gray-600">From repairs to complete installations, we provide reliable roofing solutions to protect your property.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-31-at-7.27.33-PM.jpeg" alt="Waterproofing Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/8b5cf6/ffffff?text=Waterproofing';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Waterproofing</h3>
+                            <p class="mt-2 text-gray-600">Protect your building from water damage with our professional-grade waterproofing services.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/worker-building-masonry-house-wall-with-bricks-800x534-396w.webp" alt="Masonry Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ec4899/ffffff?text=Masonry';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Masonry</h3>
+                            <p class="mt-2 text-gray-600">Expert masonry work for facades, walls, and structures that combines beauty with strength.</p>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/176_176-1.jpg" alt="Local Law 11 Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/10b981/ffffff?text=Local+Law+11';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Local Law 11 / FISP</h3>
+                            <p class="mt-2 text-gray-600">We help you comply with NYC's Facade Inspection Safety Program with thorough inspections and repairs.</p>
+                        </div>
+                    </div>
+                     <!-- Service Card 5 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/422948398-1.jpg" alt="Stucco Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/f59e0b/ffffff?text=Stucco';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Stucco</h3>
+                            <p class="mt-2 text-gray-600">Durable and attractive stucco application for a modern and clean building exterior.</p>
+                        </div>
+                    </div>
+                     <!-- Service Card 6 -->
+                    <div class="service-card">
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/Concrete-Contractors-5.jpg" alt="Concrete Service" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ef4444/ffffff?text=Concrete';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800">Concrete Work</h3>
+                            <p class="mt-2 text-gray-600">From sidewalks to foundations, our concrete work provides a solid base for your projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Why Choose Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800">Your Trusted Building Partner in the Tri-State Area</h2>
+                        <p class="mt-4 text-gray-600">When you choose Empire City Builders, you are assured access to highly qualified professionals who have been hand-selected for their experience and commitment to excellence. We build partnerships with our clients, working alongside them to bring their vision to life while adhering to the highest standards of quality and safety.</p>
+                        <div class="mt-6 space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500 mt-1"></i>
+                                <p><span class="font-semibold">Quality & Detail:</span> We pay unusual attention to the quality and details that separate great work from the rest.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500 mt-1"></i>
+                                <p><span class="font-semibold">Licensed & Insured:</span> We carry all proper insurances and licenses to perform our work efficiently and to state requirements.</p>
+                            </div>
+                             <div class="flex items-start space-x-3">
+                                <i data-feather="check-circle" class="w-6 h-6 text-green-500 mt-1"></i>
+                                <p><span class="font-semibold">Client-Focused:</span> We adhere to all client specifications before and during construction to ensure complete satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/GettyImages-941748918-5c7f3654c9e77c00012f82f6.jpg" alt="Construction team working" class="rounded-lg shadow-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x500/e5e7eb/333333?text=Our+Team+At+Work';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Preview Section -->
+        <section id="gallery" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">Our Recent Work</h2>
+                <p class="section-subtitle">A glimpse into the quality and craftsmanship we bring to every project.</p>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-07-at-11.36.07-PM.jpeg" alt="Project 1" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/a78bfa/ffffff?text=Project+1';">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-29-at-10.43.24-PM.jpeg" alt="Project 2" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/f472b6/ffffff?text=Project+2';">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/Hand-on-be-bound-with-cement-1296x728-header.webp" alt="Project 3" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/34d399/ffffff?text=Project+3';">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/GettyImages-941748918-5c7f3654c9e77c00012f82f6.jpg" alt="Project 4" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/fb923c/ffffff?text=Project+4';">
+                </div>
+                <div class="text-center mt-8">
+                     <a href="#" class="px-6 py-3 border border-blue-600 text-blue-600 font-bold rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">We build strong relationships based on trust and exceptional results.</p>
+                <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="testimonial-card">
+                        <p class="text-gray-600">"Empire City Builders transformed our building's facade. The team was professional, on-time, and the quality of their masonry work is outstanding. Highly recommended!"</p>
+                        <p class="mt-4 font-bold text-gray-800">- John D., Manhattan</p>
+                    </div>
+                     <div class="testimonial-card">
+                        <p class="text-gray-600">"They handled our Local Law 11 inspection and repairs flawlessly. Their expertise and communication made a complex process feel simple. A truly reliable company."</p>
+                        <p class="mt-4 font-bold text-gray-800">- Sarah P., Bronx</p>
+                    </div>
+                     <div class="testimonial-card">
+                        <p class="text-gray-600">"The new roof on our commercial property is perfect. The crew was efficient, clean, and the project finished on budget. We'll definitely be using their services again."</p>
+                        <p class="mt-4 font-bold text-gray-800">- Michael B., Queens</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-16">
+            <div class="container mx-auto px-6">
+                <h3 class="text-center text-xl font-semibold text-gray-600">Our Certifications & Partners</h3>
+                <div class="mt-8 flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/MBE-LOGO-400x400-1.png" alt="MBE Certified" class="h-16 object-contain" title="MBE Certified">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/rsz_gafelkcert1-1.jpg" alt="GAF Elk Certified" class="h-12 object-contain" title="GAF Certified">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/Firestone-Approved-400x400-1.png" alt="Firestone Approved" class="h-16 object-contain" title="Firestone Approved">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/EPA_LeadSafeCert-blk-1.gif" alt="EPA Lead-Safe Certified" class="h-16 object-contain" title="EPA Lead-Safe Certified">
+                    <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/rsz_better-business-bureau-logo-no-background-why-blue-chip-blue-chip-pest-control-gallery.png" alt="Better Business Bureau" class="h-20 object-contain" title="Better Business Bureau">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-800 text-white">
+             <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold">Ready to Start Your Project?</h2>
+                 <p class="mt-2 text-lg text-gray-300 max-w-2xl mx-auto">Contact us today for a free, no-obligation estimate. We're happy to assist with any and all of your property needs.</p>
+                 <div class="mt-8">
+                     <a href="mailto:info@empirecitydevelopment.com" class="px-10 py-4 bg-blue-600 text-white font-bold text-lg rounded-lg shadow-xl hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">Request Your Free Estimate</a>
+                 </div>
+             </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-white">Empire City Builders</h4>
+                    <p class="mt-2">2538 Matthews Avenue<br>Bronx, NY 10467</p>
+                    <p class="mt-2"><strong>Tel:</strong> <a href="tel:+17182135274" class="hover:text-blue-400">+1 (718) 213 5274</a></p>
+                    <p class="mt-1"><strong>Email:</strong> <a href="mailto:info@empirecitydevelopment.com" class="hover:text-blue-400">info@empirecitydevelopment.com</a></p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+                    <ul class="mt-2 space-y-1">
+                        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="#services" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="#about" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="#gallery" class="hover:text-blue-400">Gallery</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white">Our Services</h4>
+                    <ul class="mt-2 space-y-1">
+                         <li><a href="#services" class="hover:text-blue-400">Roofing</a></li>
+                         <li><a href="#services" class="hover:text-blue-400">Waterproofing</a></li>
+                         <li><a href="#services" class="hover:text-blue-400">Masonry</a></li>
+                         <li><a href="#services" class="hover:text-blue-400">Local Law 11</a></li>
+                         <li><a href="#services" class="hover:text-blue-400">Stucco</a></li>
+                         <li><a href="#services" class="hover:text-blue-400">Concrete</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <!-- Social Links can go here if you have them -->
+                     <h4 class="text-lg font-semibold text-white">Follow Us</h4>
+                     <div class="mt-2 flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i data-feather="linkedin"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+                <p>&copy; <span id="year"></span> Empire City Builders | All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Activate Feather Icons
+        feather.replace();
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
