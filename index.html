@@ -192,7 +192,7 @@
                     <img src="https://empirecitydevelopment.com/wp-content/uploads/2022/03/GettyImages-941748918-5c7f3654c9e77c00012f82f6.jpg" alt="Project 4" class="rounded-lg shadow-md w-full h-full object-cover transform hover:scale-105 transition-transform duration-300 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/400x400/fb923c/ffffff?text=Project+4';">
                 </div>
                 <div class="text-center mt-8">
-                     <a href="#" class="px-6 py-3 border border-red-600 text-red-600 font-bold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300">View Full Gallery</a>
+                     <a href="https://empirecitydevelopment.com/photo-gallery/" class="px-6 py-3 border border-red-600 text-red-600 font-bold rounded-lg hover:bg-red-600 hover:text-white transition-colors duration-300">View Full Gallery</a>
                 </div>
             </div>
         </section>
@@ -252,7 +252,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300">
         <div class="container mx-auto px-6 py-12">
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <div>
                     <h4 class="text-lg font-semibold text-white">Empire City Builders</h4>
                     <p class="mt-2">2538 Matthews Avenue<br>Bronx, NY 10467</p>
@@ -262,32 +262,22 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white">Quick Links</h4>
                     <ul class="mt-2 space-y-1">
-                        <li><a href="#home" class="hover:text-red-400">Home</a></li>
-                        <li><a href="#services" class="hover:text-red-400">Services</a></li>
-                        <li><a href="#about" class="hover:text-red-400">About Us</a></li>
-                        <li><a href="#gallery" class="hover:text-red-400">Gallery</a></li>
-                        <li><a href="#contact" class="hover:text-red-400">Contact</a></li>
+                        <li><a href="https://empirecitydevelopment.com/" class="hover:text-red-400">Home</a></li>
+                        <li><a href="https://empirecitydevelopment.com/about/" class="hover:text-red-400">About Us</a></li>
+                        <li><a href="https://empirecitydevelopment.com/contact/" class="hover:text-red-400">Contact Us</a></li>
+                        <li><a href="https://empirecitydevelopment.com/photo-gallery/" class="hover:text-red-400">Photo Gallery</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white">Our Services</h4>
                     <ul class="mt-2 space-y-1">
-                         <li><a href="#services" class="hover:text-red-400">Roofing</a></li>
-                         <li><a href="#services" class="hover:text-red-400">Waterproofing</a></li>
-                         <li><a href="#services" class="hover:text-red-400">Masonry</a></li>
-                         <li><a href="#services" class="hover:text-red-400">Local Law 11</a></li>
-                         <li><a href="#services" class="hover:text-red-400">Stucco</a></li>
-                         <li><a href="#services" class="hover:text-red-400">Concrete</a></li>
+                         <li><a href="https://empirecitydevelopment.com/roofing/" class="hover:text-red-400">Roofing</a></li>
+                         <li><a href="https://empirecitydevelopment.com/waterproofing/" class="hover:text-red-400">Waterproofing</a></li>
+                         <li><a href="https://empirecitydevelopment.com/masonry/" class="hover:text-red-400">Masonry</a></li>
+                         <li><a href="https://empirecitydevelopment.com/local-law-11/" class="hover:text-red-400">Local law 11</a></li>
+                         <li><a href="https://empirecitydevelopment.com/stucco/" class="hover:text-red-400">Stucco</a></li>
+                         <li><a href="https://empirecitydevelopment.com/concrete/" class="hover:text-red-400">Concrete</a></li>
                     </ul>
-                </div>
-                <div>
-                    <!-- Social Links can go here if you have them -->
-                     <h4 class="text-lg font-semibold text-white">Follow Us</h4>
-                     <div class="mt-2 flex space-x-4">
-                        <a href="#" class="hover:text-red-400"><i data-feather="facebook"></i></a>
-                        <a href="#" class="hover:text-red-400"><i data-feather="instagram"></i></a>
-                        <a href="#" class="hover:text-red-400"><i data-feather="linkedin"></i></a>
-                     </div>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
@@ -312,8 +302,8 @@
         // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        // Smooth scrolling for anchor links in header
+        document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 // Close mobile menu if open
